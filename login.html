@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            flex-direction: column; /* supaya navbar di atas */
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 97%;
+            background: transparent;
+            padding: 25px 40px; /* bigger padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+        }
+        nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* LOGIN FORM */
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            width: 300px;
+            margin-top: 120px; /* bagi jarak bawah navbar */
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo"> 
+        INOVASI
+    </div>
+    <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</nav>
+
+<!-- LOGIN FORM -->
+<form action="fpage.html" method="post">
+    <h2>Login</h2>
+
+    <label for="ic">No Kad Pengenalan</label>
+    <input type="text" id="ic" name="ic" placeholder="Enter your IC" required>
+
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" placeholder="Enter your name" required>
+
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>

@@ -2,43 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ penting utk phone -->
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            /* Nature Background Image */
             background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
             background-size: cover;
         }
 
+        /* NAVBAR */
         nav {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            background: transparent;
-            padding: 15px 20px;
+            width: 97%;
+            background: transparent; /* fully invisible */
+            padding: 25px 40px; /* bigger height & side padding */
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 100;
         }
 
+        /* LOGO */
         nav .logo {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             color: white;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: bold;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
         }
         nav .logo img {
-            height: 40px;
+            height: 50px; /* adjust logo size */
             width: auto;
         }
 
+        /* MENU */
         nav ul {
             list-style: none;
             margin: 0;
@@ -46,52 +50,49 @@
             display: flex;
         }
         nav ul li {
-            margin-left: 15px;
+            margin-left: 25px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 20px;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
         }
         nav ul li a:hover {
             text-decoration: underline;
         }
 
+        /* CONTENT BOX */
         .content {
-            margin-top: 120px;
+            margin-top: 160px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             text-align: center;
-            padding: 15px;
         }
-        .content1 {
+                .content1 {
             margin-top: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             text-align: center;
-            padding: 15px;
         }
 
         .table-box {
             background: rgba(255,255,255,0.9);
             border-radius: 12px;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            width: 90%; /* ✅ auto fit utk phone */
-            max-width: 800px;
+            width: 60%;
         }
 
         .table-box h1 {
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #333;
-            font-size: 20px; /* kecik utk phone */
         }
 
         table {
@@ -101,39 +102,33 @@
 
         td {
             border: 1px solid #ccc;
-            padding: 12px;
-            text-align: justify;
-            line-height: 1.5;
-            font-size: 15px; /* lebih kecil utk phone */
+            padding: 15px;
+            text-align: justify; /* ✅ Justify text */
+            line-height: 1.6;   /* ✅ Better readability */
         }
 
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                background: rgba(0,0,0,0.5);
-                padding: 10px;
-                border-radius: 8px;
-                position: absolute;
-                top: 60px;
-                right: 10px;
-            }
+        td h4 {
+            margin: 0;
+            color: #555;
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav>
         <div class="logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
             INOVASI
         </div>
         <ul>
-            <li><a href="https://zuzurizd.github.io/e-RP/index.html">Home</a></li>
-            <li><a href="https://zuzurizd.github.io/e-RP/About.html">About</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/PLES%20HELEP/INOVASI/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/PLES%20HELEP/INOVASI/About.html">About</a></li>
             <li><a href="https://docs.google.com/document/d/1J4-_x_GVJXK9z_N4gFU4WcZKA6jwT2ZWD0g_-thrjHg/edit?usp=sharing">E-RP</a></li>
         </ul>
     </nav>
 
+    <!-- PAGE CONTENT -->
     <div class="content">
         <div class="table-box">
             <h1>Apa itu Pengurusan Perniagaan?</h1>
@@ -142,37 +137,45 @@
                     <td>
                         <h3>
                             -Pengurusan perniagaan ialah proses merancang, menyusun, memimpin dan mengawal aktiviti  
-                            organisasi bagi mencapai matlamat dengan penggunaan sumber secara cekap dan berkesan...
+                            organisasi bagi mencapai matlamat dengan penggunaan sumber secara cekap dan berkesan. Melalui
+                            fungsi utama – perancangan, pengorganisasian, kepimpinan dan pengawalan – ia membantu syarikat
+                            berkembang, kekal berdaya saing serta memenuhi keperluan pelanggan dan pasaran.
                         </h3>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-
-    <div class="content1">
+        <div class="content1">
         <div class="table-box">
             <h1>Apa itu perancangan perniagaan?</h1>
             <table>
                 <tr>
                     <td>
                         <h3>
-                           -Perancangan perniagaan ialah proses merangka strategi untuk menentukan hala tuju...
+                           -Perancangan perniagaan ialah proses merangka strategi untuk menentukan hala tuju, matlamat dan   
+                            langkah bagi menjamin kejayaan perniagaan. Ia merangkumi objektif, analisis pasaran, pemasaran, 
+                            kewangan, operasi dan sumber manusia, serta berfungsi sebagai panduan dalam membuat keputusan,
+                            mengurus risiko dan mengenal pasti peluang. Dengan perancangan teratur, perniagaan dapat bergerak
+                            sistematik, elak pembaziran dan meningkatkan potensi kejayaan jangka panjang.
                         </h3>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-
-    <div class="content1">
+            <div class="content1">
         <div class="table-box">
             <h1>Tujuan website ini ditubuhkan:</h1>
             <table>
                 <tr>
                     <td>
                         <h3>
-                           Website pengurusan perniagaan ini dibangunkan sebagai platform rujukan...
+                           Website pengurusan perniagaan ini dibangunkan sebagai platform rujukan mudah diakses yang    
+                            menyediakan maklumat, panduan dan strategi berkaitan konsep, teori serta amalan pengurusan 
+                            perniagaan. Ia bertujuan membantu usahawan, pelajar dan masyarakat memahami cara mengurus 
+                            sumber, meningkatkan keberkesanan operasi, serta menyesuaikan diri dengan perubahan teknologi dan
+                            pasaran, agar perniagaan lebih sistematik, berdaya saing dan berpotensi berkembang.
                         </h3>
                     </td>
                 </tr>
@@ -181,5 +184,3 @@
     </div>
 </body>
 </html>
-
-
